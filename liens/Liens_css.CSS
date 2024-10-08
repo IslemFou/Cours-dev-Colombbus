@@ -1,0 +1,15 @@
+a
+    {
+        text-decoration: none;
+        color:rgb(158, 0, 179);
+    }
+
+a:visited
+    {
+        color: brown;
+    }
+a:hover
+/* Au survol, le pseudo-class :hover désigne un objet survolé par le curseur de la souris, et ça peut etre un lien ou autre élément HTML */
+    {
+        background-color: rgb(255, 125, 255);
+    }
