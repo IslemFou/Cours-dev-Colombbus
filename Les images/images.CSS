@@ -3,9 +3,20 @@ body
     background-color: beige;
 }
 
-h2
+h1
+{
+    font-size:40px;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+/* propriétés en commun entre h1 et h2 */
+
+h1, h2
 {
     color: brown;
+    font-weight: bold;
+    margin: 20px;
 }
 
 img
@@ -19,7 +30,7 @@ img
 
 .imageFond
 {
-    background-image:url(../media/image.jpg);
+    background-image:url(./images_files/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 16px;
@@ -45,5 +56,32 @@ img
 .rotation360:hover
 {
     transform: rotate(360deg);
+    transition:1s;
+}
+
+/* .voiture div
+{
+    border: 5px solid coral;
+} */
+
+.voiture img
+{
+    border: 5px solid rgb(0, 255, 187);
+}
+
+.voiture .voitureBlock
+{
+    border: 5px solid rgb(218, 61, 21);
+    margin: 25px;
+    /* On transforme le type de l'image de inline vers block  */
+    display: block;
+}
+
+
+/* Changer la largeur de l'image au survol */
+.voiture .voitureBlock:hover
+{
+    width: 450px;
+    margin-left: 80px;
     transition:1s;
 }

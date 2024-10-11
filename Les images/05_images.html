@@ -14,7 +14,7 @@
      <section>
         <h2>Premier cas: Image insérée depuis l'HTML </h2>
         <!-- Chemin relatif de l'image ./img/ -->
-        <img src="../media/image.jpg" alt="image nature nuit" >
+        <img src="./images_files/bg.jpg" alt="image nature nuit" >
         <!-- chemin absolut de l'image https:// -->
         <img src="https://i.notretemps.com/1400x787/smart/2021/05/03/trois-facons-de-distraire-votre-chat-a-la-maison.jpeg" alt="image chatton">
         <!-- Infobulle: on ajout l'attribut title -->
@@ -35,15 +35,28 @@
      </section>
      <section class="imageFond">
         <h2>Troisième cas: Les images de fond insérées à travers le CSS</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur tempora deleniti nobis recusandae sapiente eum consequuntur laudantium? Corporis iste, nam laudantium ad esse consequatur, quos cumque facilis aut aliquam eum.
+        <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur tempora deleniti nobis recusandae sapiente eum consequuntur laudantium? Corporis iste, nam laudantium ad esse consequatur, quos cumque facilis aut aliquam eum.
         Iusto maxime excepturi dignissimos odio magnam! Quo itaque, numquam sit debitis doloribus consectetur odit, illo aut obcaecati incidunt eum esse! Nisi sed illo dicta temporibus ullam, ut aliquam consectetur dolorum!
         Pariatur adipisci reprehenderit id? Fugit voluptates eaque quibusdam laboriosam quisquam explicabo, numquam possimus repellat ipsam? Asperiores alias, cupiditate accusantium ducimus ullam officiis, suscipit rem vero odio nobis explicabo. Velit, et!</p>
      </section>
      <section>
       <h2>Images avec animations</h2>
-      <img src="../media/voiture.avif" alt="image voiture" class="imageHover">
+      <img src="./images_files/voiture.avif" alt="image voiture" class="imageHover">
       <br>
-      <img src="../media/voiture.avif" alt="image voiture" class="imageHover rotation360">
+      <img src="./images_files/voiture.avif" alt="image voiture" class="imageHover rotation360">
      </section>
+     <section class="voiture">
+      <h2>Images de type Block</h2>
+      <div>
+         <img src="./images_files/voiture.avif" alt="img voiture" title="Image dans une div">
+      </div>
+      <!-- On transforme la balise image inline vers block à travers le CSS -->
+      <img src="./images_files/voiture.avif" alt="" title="Image de type block" class="voitureBlock">
+      <img src="./images_files/voiture.avif" alt="" title="Image de type block" class="voitureBlock">
+      <img src="./images_files/voiture.avif" alt="" title="Image de type block" class="voitureBlock">
+     </section>
+     <footer>
+      
+     </footer>
 </body>
 </html>
