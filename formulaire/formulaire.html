@@ -71,6 +71,70 @@
                 <label for="plusDe25">Plus de 40 ans</label>
             </div>
         </div>
+        <!-- Le champ: zone d'options/ bouton radio lorsqu'on fait boutons de type Radio cela signifie qu'un seul bouton à cocher de celui qui a l'attribut checked.
+          -->
+        <br>
+        <div>
+            <label for="pseudo">Pseudo</label>
+            <input type="text" id="pseudo" name="pseudo" placeholder="Trouvez-vous un Pseudo">
+        </div>
+        <br>
+        <div>
+            <label for="mdp">Mot de passe</label>
+            <input type="password" id="mdp" name="mdp" placeholder="Saisissez une mot de passe" required>
+        </div>
+            <!-- type password permet de masquer le mot de passe -->
+        <br>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="nom@email.com">
+            </div>
+        </div>
+        <br>
+        <div>
+            <label for="Telephone">Téléphone</label>
+            <input type="tel" id="Telephone" name="Telephone" pattern="^[0-9]{102526}$">
+            <!-- Type Tél: permet de faire afficher les claviers chiffrés pour les smartphones
+             -pattern: une expression rationnelle -->
+        </div>
+        <br>
+        <div>
+            <label for="photo">Photographie</label>
+            <input type="file" id="photo" name="photo">
+            <!-- Le <input type="file"> définit un champ de sélection de fichier et un bouton "Browse" pour les téléchargements de fichiers. -->
+        </div>
+        <br>
+        <div>
+            <label for="question">Choisissez votre destination : </label>
+            <div>
+                <input type="checkbox" name="question" id="" value="Dubai" checked> Dubai 
+                <input type="checkbox" name="question" id="" value="Tanzanie"> Tanzanie 
+                <input type="checkbox" name="question" id="" value="Laponie"> Laponie 
+                <!--  <input type="checkbox">définit une case à cocher.Les cases à cocher permettent à un utilisateur de sélectionner des options « ERO ou PLUS» d'un nombre limité de choix. -->
+            </div>
+        </div>
+        <br>
+        <div>
+            <label for="pays">Vous résdiez en :</label>
+            <select name="pays" id="pays">
+                <optgroup label="Europe">
+                    <option value="france">France</option>
+                    <option value="espagne">Espagne</option>
+                    <option value="italie">Italie</option>
+                    <option value="belgique">Belgique</option>
+                </optgroup>
+                <optgroup label="Amérique">
+                    <option value="canada">Canada</option>
+                    <option value="USA">USA</option>
+                    <option value="brésil">Brésil</option>
+                </optgroup>
+                <optgroup label="Asie">
+                    <option value="chine">Chine</option>
+                    <option value="japon">Japon</option>
+
+                </optgroup>
+            </select>
+        </div>
     </form>
 </body>
 </html>
