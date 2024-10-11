@@ -39,7 +39,6 @@
             <label for="prenom">Prénom</label>
             <input type="text" id="prenom" name="prenom" placeholder="votre prénom" required maxlength="15">
             <!-- maxlength: le nom de caractère maximal à saisir -->
-        </fieldset>
         <br>
         <div>
             <label for="dateDeNaiss">Votre Date de Naissance</label>
@@ -117,6 +116,7 @@
         <div>
             <label for="pays">Vous résdiez en :</label>
             <select name="pays" id="pays">
+                <option value="">Choisir mon pays</option>
                 <optgroup label="Europe">
                     <option value="france">France</option>
                     <option value="espagne">Espagne</option>
@@ -131,10 +131,42 @@
                 <optgroup label="Asie">
                     <option value="chine">Chine</option>
                     <option value="japon">Japon</option>
-
                 </optgroup>
             </select>
+            <!-- La balise select vient toujours avec des balises option: elle permet de créer un menu déroulant -->
         </div>
+        <br>
+        <!-- Envoie du formulaire -->
+         <input type="submit" name="inscription" value="S'inscrire">
+         <!-- reset / effacer le formulaire-->
+          <input type="reset" name="annuler" value="Effacer">
+         <!-- bouton désactivé -->
+          <input type="button" value="Inactif" disabled>
+<!-- D'autres type d'input formulaire:
+    <input type="button">
+    <input type="checkbox">
+    <input type="color">
+    <input type="date">
+    <input type="datetime-local">
+    <input type="email">
+    <input type="file">
+    <input type="hidden">
+    <input type="image">
+    <input type="month">
+    <input type="number">
+    <input type="password">
+    <input type="radio">
+    <input type="range">
+    <input type="reset">
+    <input type="search">
+    <input type="submit">
+    <input type="tel">
+    <input type="text">
+    <input type="time">
+    <input type="url">
+    <input type="week">
+  -->
+        </fieldset>
     </form>
 </body>
 </html>
