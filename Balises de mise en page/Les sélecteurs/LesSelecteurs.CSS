@@ -1,0 +1,16 @@
+body
+{
+    background-color: bisque;
+}
+
+h1
+{
+    color: blueviolet;
+}
+
+div
+{
+    background-color: aquamarine;
+    width:50%;
+    padding: 1rem;
+}
