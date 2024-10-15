@@ -71,12 +71,14 @@ flex-direction:row;
     flex-direction: column;
     align-items: center;
     padding: 10%;
+    
 }
 
 .Cerf img:first-child
 {
     height: 15%;
     width: 15%;
+    background:linear-gradient(45deg, transparent ,transparent 50%, rgb(238, 26, 95) 50%);
 }
 .Cerf img:last-child
 {
@@ -118,7 +120,7 @@ h2
 {
     text-align: center;
     text-transform: uppercase;
-    color: rgb(83, 19, 1);
+    color: rgb(238, 26, 95);
     font-weight: bold;
     font-size: 1rem;
 }
@@ -147,7 +149,7 @@ section.bigcontent img
 hr
 {
     width: 30px;
-    border: solid brown;
+    border: solid rgb(238, 26, 95);
 }
 
 section img
