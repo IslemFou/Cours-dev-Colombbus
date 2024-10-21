@@ -169,7 +169,7 @@ h3, h2
     margin: 0 auto;
     width: 95%;
 }
-#decouvrir h2
+h2
 {
     text-align: center;
 }
@@ -215,4 +215,24 @@ h3, h2
 footer
 {
     background-color: antiquewhite;
+}
+
+form
+{
+    text-align: center;
+}
+input,textarea 
+{
+    background-color: beige;
+    border: 1px solid rgb(110, 38, 33);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 60%;
+    margin:.5rem;
+}
+
+input[submit]
+{
+    background-color: brown;
+    width: 30%;
 }
