@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
 
 
-
+/* E-commerce website */
 
 :root
 {
@@ -104,7 +104,6 @@ h1,h2
     border-radius: 10px;
     padding: 1rem;
     margin: 2rem;
-    /* background-color: #c6c6c6; */
     border-radius: .7rem ;
     background: url("../img/ordi.jpg") no-repeat center;
     background-size: cover;

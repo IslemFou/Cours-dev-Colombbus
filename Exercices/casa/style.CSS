@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Oxanium:wght@200..800&display=swap');
 
+
+/* LA CASA website CSS */
+
+
+
 :root
 {
-    /* --brown-nav: #8f5714; */
+   --navbar: rgba(127, 157, 156, 0.503);
+   --bleuTriquoise : #0296a9;
 }
 
 *
@@ -12,43 +18,55 @@
     padding: 0;
 }
 
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(43, 43, 43);
+}
+
 /******** Header *********/
 header
 {
     background: url("./img/bg.jpg") center no-repeat;
     background-size: cover;
-    min-height: 450px;
+    min-height:900px;
 }
 
 header nav
 {
     display: flex;
     flex-direction: row;
-    /* background-color:var(--brown-nav); */
-    /* background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(26,205,234,1) 52%, rgba(57,57,208,1) 100%); */
+     background: var(--navbar);
     z-index: 1;
-    padding: 1rem 1rem;
+    padding: 1rem 10%;
     justify-content: space-between;
     align-items: center;
-    border-radius: 2rem;
-    /* margin-top: 2rem; */
-    /* position: relative; */
 }
 
-header ul
+nav ul
 {
-    margin: 0;
-    padding: 0; 
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     width: 450px;
+    align-items: center;
 }
-header li
+nav li
 {
     font-size: 1rem;
     margin-bottom: 0 ;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    border-radius: 1.8rem;
+}
+nav li:hover
+{
+    background-color:rgba(166, 228, 225, 0.448);
+    transition: 1s;
+}
+.contact
+{
+    border: 1px solid whitesmoke;
 }
 
 header a
@@ -60,16 +78,12 @@ display: inline-block;
 letter-spacing:.5px;
 }
 
-header a:hover
-{
-   text-decoration: underline; 
-}
-
 .logo
 {
     font-family: "Ephesis", cursive;
     color: aliceblue;
     text-align: center;
+    font-size: 2rem;
 }
 
 h1
@@ -77,11 +91,138 @@ h1
     font-family: "Ephesis", cursive;
     color: aliceblue;
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
+    font-weight: lighter;
+    text-transform: capitalize;
 }
 
 header p
 {
     text-align: center;
     color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ***********Section 1 ************ */
+
+h2
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(66, 112, 110) ;
+    padding: 1rem;
+}
+
+.barreTitre
+{
+    background-color: var(--navbar);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:var(--navbar);
+    padding: 0 10%;
+}
+
+
+.containCards
+{
+    display: flex;
+    flex-direction:row;
+    width: 95%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 25%;
+    /* min-height: 400px; */
+    margin: 2rem;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+
+.card img
+{
+    width:100%;
+    height: auto;
+    object-fit:contain;
+}
+
+.card div
+/* les sous-titre de card */
+{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    width: 100%;
+}
+
+.price
+{
+    position: absolute;
+    top: 10px; left: 10px;
+    /* transform: translateY(70px); */
+    z-index: 1;
+    background-color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 4px 2px rgba(136, 193, 200, 0.467);
+}
+
+/* Fin des cards */
+
+
+.containP
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin:2rem ;
+}
+
+.ButtonBorder
+{
+    color: #0296a9;
+    padding:1rem;
+    border: 1px solid #0296a9 ;
+    width:10% ;
+    border-radius: 2rem;
+}
+
+/* .ButtonBorder a:visited
+{
+    color: aqua;
+} */
+
+.ButtonBorder:hover
+{
+background-color: #0296a9;
+color: #fff;
+}
+
+.ButtonBorder a
+{
+text-decoration: none;
+}
+
+
+/* ************footer********** */
+footer
+{
+    background-color: var(--bleuTriquoise);
+    color: aliceblue;
+}
+
+hr
+{
+    color: aliceblue;
+    width:70%;
 }
