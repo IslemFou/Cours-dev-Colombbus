@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Oxanium:wght@200..800&display=swap');
+
+:root
+{
+    /* --brown-nav: #8f5714; */
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/******** Header *********/
+header
+{
+    background: url("./img/bg.jpg") center no-repeat;
+    background-size: cover;
+    min-height: 450px;
+}
+
+header nav
+{
+    display: flex;
+    flex-direction: row;
+    /* background-color:var(--brown-nav); */
+    /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(26,205,234,1) 52%, rgba(57,57,208,1) 100%); */
+    z-index: 1;
+    padding: 1rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
+    /* margin-top: 2rem; */
+    /* position: relative; */
+}
+
+header ul
+{
+    margin: 0;
+    padding: 0; 
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+}
+header li
+{
+    font-size: 1rem;
+    margin-bottom: 0 ;
+}
+
+header a
+{
+text-decoration: none;
+font-weight: bold;
+color: rgb(226, 251, 255);
+display: inline-block;
+letter-spacing:.5px;
+}
+
+header a:hover
+{
+   text-decoration: underline; 
+}
+
+.logo
+{
+    font-family: "Ephesis", cursive;
+    color: aliceblue;
+    text-align: center;
+}
+
+h1
+{
+    font-family: "Ephesis", cursive;
+    color: aliceblue;
+    text-align: center;
+    font-size: 3rem;
+}
+
+header p
+{
+    text-align: center;
+    color: aliceblue;
+}
