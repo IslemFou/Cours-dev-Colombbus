@@ -219,10 +219,75 @@ footer
 {
     background-color: var(--bleuTriquoise);
     color: aliceblue;
+    min-height: 20vh;
 }
 
-hr
+footer hr
 {
     color: aliceblue;
     width:70%;
+}
+.footerGlobal
+{
+    display: flex;
+    border: 1px solid yellow;
+    align-items: center;
+    padding: 2rem;
+}
+
+.divListes
+{
+    display: flex;
+    border: 1px solid rgb(236, 114, 13);
+    margin: 0 5rem;
+    width: 50%;
+    margin-top: 0;
+}
+
+.divListes ul
+{
+    margin: 3rem;
+}
+
+.divListes li
+{
+    list-style-type: none;
+    padding: 1rem;
+    font-weight:bold;
+}
+
+.divListes li a
+{
+    text-decoration: none;
+    color: aliceblue;
+    letter-spacing: 1px;
+}
+
+.divParag
+{
+    padding: 1rem;
+    border: 1px solid rgb(236, 114, 13);
+    margin: 1rem;
+    width: 50%;
+
+}
+
+.divParag p
+{
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.divParag div svg
+{
+    width: 20px;
+    margin: 0 .5rem;
+}
+
+
+svg:hover , .divListes li a:hover
+{
+    stroke: orange;
+    fill: orange;
+    color: orange;
 }

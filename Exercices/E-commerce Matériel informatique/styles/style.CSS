@@ -31,7 +31,7 @@ header nav
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(26,205,234,1) 52%, rgba(57,57,208,1) 100%);
     z-index: 1;
-    padding: 1rem 1rem;
+    padding: .2rem 1rem;
     justify-content: space-between;
     align-items: center;
     border-radius: 2rem;
