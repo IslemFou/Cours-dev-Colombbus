@@ -37,9 +37,6 @@ Les requêtes multimédia peuvent être appliquées de 2 façons :
 */
 
 
-
-
-
 /* Pour les très grands écrans (XX-Large) -> à partir de 1400px */
 @media(min-width:1400px) 
 {
